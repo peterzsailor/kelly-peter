@@ -104,9 +104,7 @@
 
   <button type="submit">Send Message</button>
 </form>
-
-              <div class="d-flex ">
-                <?php
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
@@ -124,17 +122,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
-                <button>
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- end contact section -->
 
