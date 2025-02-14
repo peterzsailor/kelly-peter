@@ -104,26 +104,12 @@
 
   <button type="submit">Send Message</button>
 </form>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-
-    $to = "peterzsailor73@gmail.com";  // Replace with your email
-    $subject = "New Message from Website";
-    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-    $headers = "From: $email";
-
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
-    } else {
-        echo "Failed to send message.";
-    }
-}
-?>
-
-  <!-- end contact section -->
+<script>
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        const learnMoreButton = document.getElementById('learn-more');
+        const joinNowButton = document.getElementById('join-now');
+    <!-- end contact section -->
 
   <!-- info section -->
   <section class="info_section layout_padding2">
